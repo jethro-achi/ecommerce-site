@@ -22,13 +22,7 @@ from django.template import loader
 from django.shortcuts import render
 
 def members(request):
-    # You can remove this line as it is not needed
-    # return HttpResponse("Hello world!")
-
-    # Load and render the 'index.html' template
-    return render(request, 'index.html')
-    return render(request, 'shopitem.html')
-
+    return render(request, 'index.html',)
 
 def indexpage(request):
     context = {'selected_page': 'index'}
